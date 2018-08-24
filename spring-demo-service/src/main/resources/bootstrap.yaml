@@ -1,11 +1,21 @@
 server:
-  port: 8281
+  port: 8283
 
 eureka:
-  client:
-    serviceUrl:
-      # 向每个注册中心注册
-      defaultZone: http://localhost:8761/eureka/,http://localhost:8762/eureka/
+    instance:
+        statusPageUrlPath: /actuator/info  #服务信息
+        healthCheckUrlPath: /actuator/health  #服务心跳
+        #hostname: 10.10.203.105
+        hostname: 10.101.90.220  #服务注册中心ip
+
+        preferIpAddress: true  #是否使用ip注册到服务中心
+        #instance-id: 10.10.203.105:${server.port}
+        instance-id: 10.101.90.220:${server.port}  #当前服务的访问地址
+    client:
+        enabled: true
+        serviceUrl:
+            defaultZone: http://${eureka.instance.hostname}:8761/eureka/,http://${eureka.instance.hostname}:8762/eureka/
+
 spring:
   application:
     name: spring-demo-service

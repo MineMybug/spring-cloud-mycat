@@ -1,5 +1,5 @@
 server:
-  port: 8283
+  port: 8381
 
 eureka:
     instance:
@@ -18,7 +18,7 @@ eureka:
 
 spring:
   application:
-    name: spring-demo-service
+    name: spring-ribbon
 
 management:
   endpoints:
@@ -31,3 +31,8 @@ management:
 
 info:
   version: 1.0
+  
+#新增配置策略
+SPRING-DEMO-SERVICE:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
