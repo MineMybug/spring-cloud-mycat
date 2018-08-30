@@ -15,6 +15,7 @@
   	<module>Async-task</module>
   	<module>spring-demo-feign-module</module>
   	<module>spring-hystrix-dashboard</module>
+  	<module>gateway-service</module>
   </modules>
   
   <properties>
