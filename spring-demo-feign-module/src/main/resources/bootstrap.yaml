@@ -1,5 +1,5 @@
 server:
-  port: 8284
+  port: 8382
 
 eureka:
     instance:
@@ -18,7 +18,7 @@ eureka:
 
 spring:
   application:
-    name: spring-demo-service
+    name: spring-demo-feign-module
 
 management:
   endpoints:
@@ -31,3 +31,13 @@ management:
 
 info:
   version: 1.0
+  
+
+# Ribbon 的负载均衡策略
+spring-demo-service:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+
+feign:
+  hystrix:
+    enabled: true

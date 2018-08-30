@@ -11,6 +11,9 @@
   	<module>eureka-server</module>
   	<module>spring-demo-service</module>
   	<module>spring-ribbon</module>
+  	<module>spring-redis-client</module>
+  	<module>Async-task</module>
+  	<module>spring-demo-feign-module</module>
   </modules>
   
   <properties>
