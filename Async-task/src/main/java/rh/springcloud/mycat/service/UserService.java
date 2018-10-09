@@ -46,4 +46,13 @@ public class UserService {
         
 	}
 
+	/**    
+	 * <p>Description: </p>    
+	 */  
+	public void selectByPrimaryKey() {
+		
+		userInfoMapper.selectByPrimaryKey(1);
+	}
+
+
 }

@@ -4,7 +4,7 @@
 * @date 2018年8月30日  
 * @version 1.0  
 */ 
-package rh.springcloud.mycat.Component;
+package rh.springcloud.mycat.component;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

@@ -17,7 +17,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import rh.springcloud.mycat.Component.Task;
+import rh.springcloud.mycat.component.Task;
 
 /**   
 * <p>Description: </p>  
