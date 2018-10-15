@@ -16,6 +16,7 @@
   	<module>spring-demo-feign-module</module>
   	<module>spring-hystrix-dashboard</module>
   	<module>gateway-service</module>
+  	<module>admin-server</module>
   </modules>
   
   <properties>

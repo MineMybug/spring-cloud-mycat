@@ -6,14 +6,11 @@
 */ 
 package rh.springcloud.mycat.controller;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import rh.springcloud.mycat.entity.user.UserInfo;
 import rh.springcloud.mycat.service.UserService;
 
 /**   
